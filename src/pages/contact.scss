@@ -1,0 +1,142 @@
+.section1 {
+    /* Example background color */
+    padding: 3rem;
+    
+    /* Example padding */
+    margin: 10px;
+    /* Example margin */
+    // border: 1px solid #ccc;
+    /* Example border */
+    text-align: center;
+    height: 80vh;
+
+    @media (max-width: 740px) {
+        padding: 0;
+        margin: 0;
+
+
+    }
+
+    /* Example text alignment */
+
+
+    .d1 {
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+    }
+
+    .d3 {
+        display: none;
+        /* Hidden by default */
+        display: flex;
+        /* Show on screens wider than lg */
+        position: absolute;
+        /* Absolute positioning */
+        bottom: 0;
+        /* Position at the bottom */
+        left: 0;
+        /* Position at the left */
+        right: 0;
+        /* Position at the right */
+        top: 72px;
+        /* Top offset from the top */
+        z-index: -10;
+        /* Negative z-index for layering */
+    }
+
+    .d2 {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+
+        @media (min-width: 768px) {
+            /* Target screens wider than lg breakpoint (adjust if needed) */
+            flex-direction: row;
+
+            /* Change to row layout on larger screens */
+        }
+
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        // padding-top: 36px;
+        gap: 8px;
+        /* Assuming gap refers to gap-x */
+
+        text-align: center;
+
+        @media (min-width: 768px) {
+            /* Target screens wider than lg breakpoint (adjust if needed) */
+            text-align: left;
+
+            /* Change text alignment to left on larger screens */
+            .d4 {
+                flex: 2;
+                align-items: flex-start;
+                
+            }
+        }
+    }
+
+    .inpo {
+        outline: none !important;
+        border-bottom: 1px solid #d62828;
+        border-right: 0;
+        border-top: 0;
+        border-left: 0;
+        /* Assuming primary color is defined in a variable */
+        height: 60px;
+        background-color: #1d1d1d;
+        /* Assuming you have a mixin for font-secondary styles */
+        width: 100%;
+        padding-left: 3px;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.613)
+        }
+    }
+
+    .d4 {
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+        }
+
+    }
+
+    .d6 {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .btn1 {
+        background-color: #d62828;
+        color: #fff;
+        padding: 0.875rem 1.5rem;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        margin-bottom: 30px;
+
+
+    }
+
+    .btn1:hover {
+        background-color: #e75757;
+    }
+
+    @media (min-width: 768px) {
+
+        .btn1 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+}

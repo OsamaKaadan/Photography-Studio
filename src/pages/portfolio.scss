@@ -1,0 +1,173 @@
+.section {
+    background-color: #131314;
+    height: 100vh;
+    padding: 6rem;
+    padding-top: 0;
+    overflow-y: hidden;
+
+
+    @media (max-width: 768px) {
+        padding: 2rem;
+        padding-top: 0;
+        overflow-y: hidden;
+
+
+    }
+
+    .container2 {
+
+        height: 100%;
+        position: relative;
+        // padding: 20px;
+        margin: auto;
+
+
+        .div1 {
+            flex-direction: column;
+                
+
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+            }
+
+            height: 100%;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 24px;
+            text-align: center;
+
+            @media (min-width: 768px) {
+                text-align: left;
+            }
+
+            padding-top: 24px;
+
+            @media (min-width: 768px) {
+                padding-top: 36px;
+            }
+
+            padding-bottom: 8px;
+
+
+            .div2 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+    
+                .div3 {
+                    @media (max-width: 767px) {
+                        max-width: 100%;
+                        max-height: 8rem;
+
+                    }
+        
+                    /* حد أقصى للعرض على شاشات كبيرة */
+                    @media (min-width: 768px) {
+                        max-width: 320px;
+                    }
+        
+                    /* الارتفاع على شاشات صغيرة */
+                    height: 10rem;
+
+                    /* الارتفاع على شاشات كبيرة */
+                    @media (min-width: 768px) {
+                        height: 220px;
+                    }
+        
+                    /* إخفاء المحتوى الزائد */
+                    overflow: hidden;
+                    
+                }
+                @media (max-width: 767px) {
+                    align-items: center; /* Center horizontally */
+                    justify-content: space-between; /* Distribute elements evenly with space between */
+                    gap: 10px; /* Add spacing between elements */
+    
+    
+                }
+            }
+    
+            @media (min-width: 768px) {
+    
+                .div2 {
+                    gap: 1rem;
+                }
+            }
+    
+        }
+
+        .h1 {
+            font-size: 2.25rem;
+            line-height: 2.8125rem;
+            margin: 0.875rem 0;
+            font-weight: 500;
+            color: white;
+        }
+
+        .btn1 {
+            background-color: #d62828;
+            color: #fff;
+            padding: 0.875rem 1.5rem;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            margin-bottom: 30px;
+
+
+        }
+
+        .btn1:hover {
+            background-color: #e75757;
+        }
+
+        @media (min-width: 768px) {
+
+            .btn1 {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+
+        .flex1 {
+            display: flex;
+            flex-direction: column;
+            
+            @media (min-width: 768px) {
+                align-items: flex-start;
+
+            }
+        }
+
+
+
+
+        .imgo {
+            contain: cover;
+            height: 80%;
+
+            
+
+
+            @media (min-width: 768px) {
+                height: 220px;
+            }
+
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+
+
+
+
+    }
+
+
+
+}
