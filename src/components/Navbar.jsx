@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className='logo'>
-                <motion.img src='src/assets/Images/logo.png' alt="" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.25, duration: 1, staggerChildren: 0.25 }} />
+                <motion.img src='./src/assets/Images/logo.png' alt="" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.25, duration: 1, staggerChildren: 0.25 }} />
             </div>
 
             {!isMobile && (
